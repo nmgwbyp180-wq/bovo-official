@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bovo">
+  <rect width="64" height="64" fill="#fbf9f5"/>
+  <circle cx="32" cy="32" r="27" fill="none" stroke="#b49a6a" stroke-width="1.5"/>
+  <text x="32" y="42" font-family="Georgia, 'Times New Roman', serif" font-size="30" fill="#2e2c29" text-anchor="middle">B</text>
+</svg>

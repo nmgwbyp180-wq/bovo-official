@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bovo AI Operations | Bovo</title>
+  <meta name="description" content="Bovo AI Operations is a Windows desktop workspace developed by 内蒙古魏帛绒毛制品有限公司 to analyze its own Amazon Japan business. Internal use only.">
+  <link rel="canonical" href="https://nmgwbyp180-wq.github.io/bovo-official/ai-operations.html">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html" aria-label="Bovo home"><span class="mark" aria-hidden="true">B</span>Bovo</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <ul class="nav-links" id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="ai-operations.html" aria-current="page">Bovo AI Operations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <section class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Internal software &middot; Windows desktop</p>
+        <h1>Bovo AI Operations</h1>
+        <p class="lead">A desktop analysis workspace that we developed for our own Amazon Japan business. It brings sales, inventory, product and search-performance data into one place, stores it in a local database, and lets us run AI diagnostics on demand.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split">
+        <div class="reveal">
+          <p class="eyebrow">What it is</p>
+          <h2>A clearer view of our own business.</h2>
+          <p>Bovo AI Operations is a Windows application used by our company to review how our products perform on Amazon Japan. It connects to Amazon Selling Partner API (SP-API) for our own seller account, keeps the business records in a local SQLite database on the Windows computer, and provides analysis screens for sales, inventory, products and search.</p>
+          <p>The application is developed and operated by us, for us. It is not a commercial product, is not sold or licensed to other sellers, and is not used to provide advertising or account-management services for third parties.</p>
+          <ul class="checklist" style="margin-top:26px">
+            <li>Developed and operated by 内蒙古魏帛绒毛制品有限公司</li>
+            <li>Used only for our own Amazon Japan seller account</li>
+            <li>Business data stored locally on our own Windows computers</li>
+            <li>AI analysis runs only when a user explicitly starts it</li>
+          </ul>
+        </div>
+        <figure class="shot reveal">
+          <img src="assets/img/app-overview.png" width="1264" height="625" alt="Overview screen of Bovo AI Operations with sales and traffic metrics">
+          <figcaption>Business overview screen (interface demonstration).</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--ivory">
+      <div class="wrap">
+        <p class="eyebrow reveal">Current functions</p>
+        <h2 class="reveal">What the workspace does today.</h2>
+        <ul class="feature-list reveal" style="margin-top:44px">
+          <li>
+            <strong>Amazon SP-API sales analysis</strong>
+            <span>Sales and traffic data from our own seller account, reviewed by period and product.</span>
+          </li>
+          <li>
+            <strong>Inventory analysis</strong>
+            <span>FBA inventory levels and coverage, so we can judge what to restock and when.</span>
+          </li>
+          <li>
+            <strong>Product performance analysis</strong>
+            <span>How each product and variation performs over time, including cost inputs for margin review.</span>
+          </li>
+          <li>
+            <strong>SQP / SCP search performance</strong>
+            <span>Search Query Performance (SQP) and Search Catalog Performance (SCP) data, to see which search terms and impressions our products receive.</span>
+          </li>
+          <li>
+            <strong>Local database</strong>
+            <span>Business records held in a local SQLite database on the Windows computer, under our own account controls.</span>
+          </li>
+          <li>
+            <strong>User-triggered AI diagnostics</strong>
+            <span>When the user chooses to, a prepared snapshot of business data is sent to DeepSeek for a structured diagnostic report. Nothing is sent until the user confirms the request.</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap split split--reverse">
+        <figure class="shot reveal">
+          <img src="assets/img/app-ai.png" width="1920" height="2600" alt="AI diagnostic screen of Bovo AI Operations showing analysis settings and history">
+          <figcaption>AI diagnostics screen with analysis settings and history.</figcaption>
+        </figure>
+        <div class="reveal">
+          <p class="eyebrow">Design choices</p>
+          <h2>Local first, and user-initiated.</h2>
+          <p>Business data stays on our own computers unless we explicitly ask for an AI analysis. Credentials are protected with the Windows Data Protection API in the current Windows user context. Each AI request is prepared from a selected scope and confirmed before it is sent.</p>
+          <p>The workspace also makes the quality of its own data visible: when dates are missing, attribution is still maturing, or a sample is small, the relevant figures are presented with that context instead of being silently averaged into a clean number.</p>
+          <p class="caption">Screens on this page show the application interface with sample data for demonstration. They do not show our live business figures.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner">
+      <div class="wrap">
+        <p class="eyebrow">Roadmap</p>
+        <span class="status">Planned &middot; access requested</span>
+        <h2>Amazon Ads API: still being requested.</h2>
+        <p>We have applied for access to the Amazon Ads API. If and when access is granted, we plan to use it to read advertising performance data for our own advertising accounts, so that advertising figures can be reviewed together with sales, inventory and search data from our own business.</p>
+        <p style="margin-top:16px">This work is in the planning stage. The application does not currently connect to the Amazon Ads API, and we do not claim that access has been granted or that Amazon endorses or is affiliated with this application.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="eyebrow reveal">Scope</p>
+        <h2 class="reveal">How the software is used.</h2>
+        <div class="grid-2" style="margin-top:40px">
+          <div class="card reveal">
+            <h3>For our own business only</h3>
+            <p>Bovo AI Operations is used to operate and understand the Amazon Japan business of 内蒙古魏帛绒毛制品有限公司. It is not available for download or purchase, and it has no public login.</p>
+          </div>
+          <div class="card reveal">
+            <h3>No third-party services</h3>
+            <p>We do not offer advertising management, consulting or account-operation services to other sellers. The application does not access data belonging to other Amazon sellers or advertisers.</p>
+          </div>
+          <div class="card reveal">
+            <h3>No Amazon trademark rights implied</h3>
+            <p>We use Amazon services as an independent seller. Bovo AI Operations is a product of our own company, and Amazon has not reviewed, sponsored or endorsed it.</p>
+          </div>
+          <div class="card reveal">
+            <h3>Privacy information</h3>
+            <p>How the application handles information, including local storage and AI requests, is set out in our <a class="link-underline" href="https://nmgwbyp180-wq.github.io/bovo-ai-privacy/privacy.html">Privacy Policy</a>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" style="font-size:1.15rem"><span class="mark" aria-hidden="true">B</span>Bovo</a>
+          <p class="small muted" style="margin-top:14px; max-width:34ch">A textile company in Inner Mongolia, China, making cashmere scarves, cashmere accessories and silk quilts.</p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="ai-operations.html">Bovo AI Operations</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Information</h4>
+          <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="https://nmgwbyp180-wq.github.io/bovo-ai-privacy/privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> 内蒙古魏帛绒毛制品有限公司 &middot; Inner Mongolia Weibo Wool Products Co., Ltd.</span>
+        <span>This site contains no analytics or advertising trackers.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.querySelectorAll('[data-year]').forEach(function(f){f.textContent=new Date().getFullYear();});</script>
+</body>
+</html>
